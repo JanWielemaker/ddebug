@@ -1,8 +1,9 @@
 # Declarative Debugger
 
 This package  implements half  of the  ideas from  Włodzimierz Drabent
-described in _"On Feasibility of Declarative Diagnosis"_, presented at
-ICLP2023 as a poster.
+described      in       [On      Feasibility       of      Declarative
+Diagnosis](https://home.ipipan.waw.pl/w.drabent/ICLP2023.DDfeasibility.pdf),
+presented at ICLP2023 as a poster.
 
 With _half_, we mean it only  implements the part for debugging _wrong
 answers_, not the scenario where no answer is produced.
