@@ -155,7 +155,9 @@ print_location(Tree) :-
     clause_property(CRef, file(File)),
     clause_property(CRef, line_count(Line)),
     !,
-    ansi_format(comment, '% ~w:~d~n', [File, Line]).
+    ansi_format(comment, '% ', []),
+    ansi_hyperlink(user_output, File:Line),
+    nl(user_output).
 print_location(_).
 
 clause_factorized(Path, Goal, Children, FPath, FGoal, FChildren, Subst, State) :-
