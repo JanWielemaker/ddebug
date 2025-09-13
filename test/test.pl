@@ -1,6 +1,6 @@
-:- use_module(ddebug).
+:- use_module(library(ddebug)).
 :- use_module(library(chat80)).
-:- ensure_loaded(swi('../../bench/zebra')).
+:- ensure_loaded(swi('../../bench/programs/zebra')).
 
 test_chat(N, Sentence, CorrectAnswer) :-
     chat80:test_chat(N, Sentence, CorrectAnswer).
