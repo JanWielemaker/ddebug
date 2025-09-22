@@ -1,9 +1,9 @@
 # Declarative Debugger
 
-This package  implements half  of the  ideas from  Włodzimierz Drabent
-described      in       [On      Feasibility       of      Declarative
-Diagnosis](https://home.ipipan.waw.pl/w.drabent/ICLP2023.DDfeasibility.pdf),
-presented at ICLP2023 as a poster.
+This package implements half  of  the   ideas  from  Włodzimierz Drabent
+described      in      [On       Feasibility        of       Declarative
+Diagnosis](https://dx.doi.org/10.4204/EPTCS.385.20),    presented     at
+ICLP2023 as a poster.
 
 With _half_, we mean it only  implements the part for debugging _wrong
 answers_, not the scenario where no answer is produced.
@@ -17,7 +17,7 @@ The other question  is whether this really produces  a more productive
 debugging experience to find the  root of wrong answers than classical
 debugging, i.e.,
 
-  - Hierarchical decent using the normal debugger ("skip", when wrong
+  - Hierarchical descent using the normal debugger ("skip", when wrong
     "retry", "creep" and skip the sub-goals one by one).
   - Formulate hypothesis and use spy/1 or break points to inspect the
     execution at this point.
@@ -27,14 +27,14 @@ debugging, i.e.,
 
 If `git` is installed on your machine, the following should work:
 
-    ?- pack_install(ddebug).
+    swipl pack install ddebug
 
 Else,            download           the            code           from
 https://github.com/JanWielemaker/ddebug.git,   either  using   git  or
 download as  an archive and  unpack.  Next, enter the  directory using
 Prolog and run
 
-    ?- pack_install(.).
+    swipl pack install .
 
 ## Usage
 
